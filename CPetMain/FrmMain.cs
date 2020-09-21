@@ -22,7 +22,12 @@ namespace CPetMain
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
+            IniHelper.Instance.FileName = "conf/config.ini";
+            this.Location = new Point(
+                IniHelper.Instance.ReadInteger("Setting", "location_x", Screen.GetWorkingArea(this).Width - this.Width - 100),
+                IniHelper.Instance.ReadInteger("Setting", "location_y", Screen.GetWorkingArea(this).Height - this.dSkinPictureBox1.Height)
+            );
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -204,6 +209,9 @@ namespace CPetMain
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 is_move = false;
+                IniHelper.Instance.FileName = "conf/config.ini";
+                IniHelper.Instance.WriteInteger("Setting", "location_x", this.Location.X);
+                IniHelper.Instance.WriteInteger("Setting", "location_y", this.Location.Y);
             }
         }
 
