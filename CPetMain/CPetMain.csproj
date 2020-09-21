@@ -31,7 +31,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DSkin">
+      <HintPath>D:\DSkin\【4.0】DSkin20200828223156\DSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DSkin.Design">
+      <HintPath>D:\DSkin\【4.0】DSkin20200828223156\DSkin.Design.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,14 +53,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -70,6 +92,50 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CE6354BA-6B04-40AD-A8C5-4D3AF9D090F7}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin\Plugin.Express\Plugin.Express.csproj">
+      <Project>{560bd957-f0eb-4d94-9b84-cf940493d55b}</Project>
+      <Name>Plugin.Express</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin\Plugin.Ocr\Plugin.Ocr.csproj">
+      <Project>{73155034-b720-4581-8147-01e35cd8f955}</Project>
+      <Name>Plugin.Ocr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin\Plugin.Weather\Plugin.Weather.csproj">
+      <Project>{e648032a-900b-4e45-96f8-b92a0c4feab0}</Project>
+      <Name>Plugin.Weather</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.AutoShutdown\Tools.AutoShutdown.csproj">
+      <Project>{dbca01ff-09f7-4af2-b17f-6a945800cb5c}</Project>
+      <Name>Tools.AutoShutdown</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.FormatJson\Tools.FormatJson.csproj">
+      <Project>{7878d6e3-5421-4914-bf8b-a7fcc7eaff66}</Project>
+      <Name>Tools.FormatJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.Notes\Tools.Notes.csproj">
+      <Project>{1838bb09-8730-4618-b6dc-079282f5d4a6}</Project>
+      <Name>Tools.Notes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.PicThumb\Tools.PicThumb.csproj">
+      <Project>{e9e45e94-81b7-498e-b9a0-193b394b50a6}</Project>
+      <Name>Tools.PicThumb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.ScreenCut\Tools.ScreenCut.csproj">
+      <Project>{1af1a936-24d5-4f9e-bb2c-ad903cffa204}</Project>
+      <Name>Tools.ScreenCut</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shime1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
