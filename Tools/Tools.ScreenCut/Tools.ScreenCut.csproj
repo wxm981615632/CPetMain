@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AF1A936-24D5-4F9E-BB2C-AD903CFFA204}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tools.ScreenCut</RootNamespace>
+    <AssemblyName>Tools.ScreenCut</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureForm.Designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\FormUtil.cs" />
+    <Compile Include="Class\KeyModel.cs" />
+    <Compile Include="Class\Util.cs" />
+    <Compile Include="Control\ImageProcessBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ImageProcessBox.Designer.cs">
+      <DependentUpon>ImageProcessBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ColorBoxDesginer.cs" />
+    <Compile Include="Control\LCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LCheckBox.Designer.cs">
+      <DependentUpon>LCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LComboBox.Designer.cs">
+      <DependentUpon>LComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LTextBox.Designer.cs">
+      <DependentUpon>LTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LxzhAlphaTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LxzhColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LxzhColorBox.Designer.cs">
+      <DependentUpon>LxzhColorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\ControlProperties.cs" />
+    <Compile Include="Control\ComboBox\GripBounds.cs" />
+    <Compile Include="Control\ComboBox\LxzhComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhComboBox.Designer.cs">
+      <DependentUpon>LxzhComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhComboBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhComboBoxItem.Designer.cs">
+      <DependentUpon>LxzhComboBoxItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhListControl.Designer.cs">
+      <DependentUpon>LxzhListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhRoundControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhRoundControl.Designer.cs">
+      <DependentUpon>LxzhRoundControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhScrollBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\LxzhScrollBar.Designer.cs">
+      <DependentUpon>LxzhScrollBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\NativeMethods.cs" />
+    <Compile Include="Control\ComboBox\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LxzhTextInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LxzhTextInput.designer.cs">
+      <DependentUpon>LxzhTextInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LxzhTipLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LxzhTipLabel.Designer.cs">
+      <DependentUpon>LxzhTipLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LxzhToolButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\LxzhToolButton.Designer.cs">
+      <DependentUpon>LxzhToolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ToolButtonDesigner.cs" />
+    <Compile Include="Class\KeyHook.cs" />
+    <Compile Include="Class\MouseHook.cs" />
+    <Compile Include="Class\Win32.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StickyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StickyForm.Designer.cs">
+      <DependentUpon>StickyForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ImageProcessBox.resx">
+      <DependentUpon>ImageProcessBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LxzhAlphaTextBox.resx">
+      <DependentUpon>LxzhAlphaTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LxzhColorBox.resx">
+      <DependentUpon>LxzhColorBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ComboBox\LxzhComboBox.resx">
+      <DependentUpon>LxzhComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ComboBox\LxzhListControl.resx">
+      <DependentUpon>LxzhListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ComboBox\LxzhRoundControl.resx">
+      <DependentUpon>LxzhRoundControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ComboBox\LxzhScrollBar.resx">
+      <DependentUpon>LxzhScrollBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LxzhTextInput.resx">
+      <DependentUpon>LxzhTextInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LxzhTipLabel.resx">
+      <DependentUpon>LxzhTipLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LxzhToolButton.resx">
+      <DependentUpon>LxzhToolButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StickyForm.resx">
+      <DependentUpon>StickyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Control\ComboBox\arrowlist.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Resources\arrow.png" />
+    <Content Include="Resources\ass.ico" />
+    <Content Include="Resources\brush.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\color.png" />
+    <Content Include="Resources\cross.cur" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\cursor.png" />
+    <Content Include="Resources\ellips.png" />
+    <Content Include="Resources\exit.ico" />
+    <Content Include="Resources\icon.ico" />
+    <Content Include="Resources\large.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\middle.png" />
+    <Content Include="Resources\none.png" />
+    <Content Include="Resources\ok.png" />
+    <Content Include="Resources\out.png" />
+    <Content Include="Resources\rect.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\separator.png" />
+    <Content Include="Resources\setting.ico" />
+    <Content Include="Resources\small.png" />
+    <Content Include="Resources\text.png" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

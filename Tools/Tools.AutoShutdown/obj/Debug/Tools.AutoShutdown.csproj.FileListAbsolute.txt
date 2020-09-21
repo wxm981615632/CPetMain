@@ -1,0 +1,22 @@
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\bin\Debug\Tools.AutoShutdown.dll
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\bin\Debug\Tools.AutoShutdown.pdb
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csprojAssemblyReference.cache
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.FrmMain.resources
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Form2.resources
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Form3.resources
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Properties.Resources.resources
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csproj.GenerateResource.cache
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csproj.CoreCompileInputs.cache
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.dll
+G:\www\C#\CPet\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.pdb
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\bin\Debug\Tools.AutoShutdown.dll
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\bin\Debug\Tools.AutoShutdown.pdb
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csprojAssemblyReference.cache
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.FrmMain.resources
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Form2.resources
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Form3.resources
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.Properties.Resources.resources
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csproj.GenerateResource.cache
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.csproj.CoreCompileInputs.cache
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.dll
+G:\www\C#\CPet - 副本\Tools\Tools.AutoShutdown\obj\Debug\Tools.AutoShutdown.pdb
