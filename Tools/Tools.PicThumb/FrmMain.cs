@@ -77,7 +77,7 @@ namespace Tools.PicThumb
                     File.Copy("temp/"+ dSkinGridList1.Rows[i].Cells[0].Value.ToString(), dSkinGridList1.Rows[i].Cells[1].Value.ToString(), true);
                     File.Delete("temp/" + dSkinGridList1.Rows[i].Cells[0].Value.ToString());
                 }
-                
+                dSkinGridList1.Rows[i].Cells[2].Value = "完成";
             }
             
         }
@@ -106,7 +106,7 @@ namespace Tools.PicThumb
                     string ext = System.IO.Path.GetExtension(path);
                     if (Array.IndexOf(img, ext) != -1)
                     {
-                        dSkinGridList1.Rows.AddRow(filename, path);
+                        dSkinGridList1.Rows.AddRow(filename, path,"——");
                     }
                     else
                     {

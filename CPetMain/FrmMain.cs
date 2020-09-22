@@ -223,6 +223,12 @@ namespace CPetMain
                 oPointClicked = new Point(e.X, e.Y);
             }
         }
+
+        private void 常规ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSetting fs = new FrmSetting();
+            fs.ShowDialog();
+        }
         //timer0    清理/加速
         //timer1    清理缓存
         //timer2    写入好感度

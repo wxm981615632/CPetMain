@@ -30,6 +30,7 @@
         {
             DSkin.Controls.DSkinGridListColumn dSkinGridListColumn1 = new DSkin.Controls.DSkinGridListColumn();
             DSkin.Controls.DSkinGridListColumn dSkinGridListColumn2 = new DSkin.Controls.DSkinGridListColumn();
+            DSkin.Controls.DSkinGridListColumn dSkinGridListColumn3 = new DSkin.Controls.DSkinGridListColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.dSkinCheckBox1 = new DSkin.Controls.DSkinCheckBox();
             this.dSkinButton1 = new DSkin.Controls.DSkinButton();
@@ -164,14 +165,18 @@
             this.dSkinGridList1.ColumnHeight = 30;
             dSkinGridListColumn1.Name = "文件名";
             dSkinGridListColumn1.Visble = true;
-            dSkinGridListColumn1.Width = 186;
+            dSkinGridListColumn1.Width = 146;
             dSkinGridListColumn2.Name = "路径";
             dSkinGridListColumn2.Tag = "";
             dSkinGridListColumn2.Visble = true;
-            dSkinGridListColumn2.Width = 387;
+            dSkinGridListColumn2.Width = 347;
+            dSkinGridListColumn3.Name = "状态";
+            dSkinGridListColumn3.Visble = true;
+            dSkinGridListColumn3.Width = 80;
             this.dSkinGridList1.Columns.AddRange(new DSkin.Controls.DSkinGridListColumn[] {
             dSkinGridListColumn1,
-            dSkinGridListColumn2});
+            dSkinGridListColumn2,
+            dSkinGridListColumn3});
             this.dSkinGridList1.ContextMenuStrip = this.dSkinContextMenuStrip1;
             this.dSkinGridList1.DoubleItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dSkinGridList1.EnabledOrder = false;
@@ -219,10 +224,10 @@
             this.dSkinGridList1.HScrollBar.Fillet = true;
             this.dSkinGridList1.HScrollBar.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dSkinGridList1.HScrollBar.Location = new System.Drawing.Point(0, 245);
-            this.dSkinGridList1.HScrollBar.Maximum = 267;
+            this.dSkinGridList1.HScrollBar.Maximum = 30;
             this.dSkinGridList1.HScrollBar.Name = "";
             this.dSkinGridList1.HScrollBar.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.dSkinGridList1.HScrollBar.ScrollBarLenght = 367;
+            this.dSkinGridList1.HScrollBar.ScrollBarLenght = 521;
             this.dSkinGridList1.HScrollBar.ScrollBarPartitionWidth = new System.Windows.Forms.Padding(5);
             this.dSkinGridList1.HScrollBar.Size = new System.Drawing.Size(574, 12);
             this.dSkinGridList1.HScrollBar.Visible = false;
