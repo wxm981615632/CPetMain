@@ -64,7 +64,9 @@ namespace Common
             {
                 result = reader.ReadToEnd();
             }
+            Console.WriteLine(result);
             return result;
+
         }
 
 

@@ -65,6 +65,4 @@ G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Common.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Tools.FormatJson.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\DSkin.xml
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Newtonsoft.Json.xml
-G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\System.Data.SQLite.xml
-G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\System.Data.SQLite.dll.config
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\obj\Debug\Plugin.Ocr.csproj.CopyComplete

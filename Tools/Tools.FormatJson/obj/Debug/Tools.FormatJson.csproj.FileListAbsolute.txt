@@ -47,6 +47,4 @@ G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Common.pdb
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\DSkin.xml
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Newtonsoft.Json.xml
-G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\System.Data.SQLite.xml
-G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\System.Data.SQLite.dll.config
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\obj\Debug\Tools.FormatJson.csproj.CopyComplete

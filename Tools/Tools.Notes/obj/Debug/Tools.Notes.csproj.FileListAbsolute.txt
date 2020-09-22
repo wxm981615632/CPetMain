@@ -50,6 +50,4 @@ G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Common.pdb
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\DSkin.xml
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Newtonsoft.Json.xml
-G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\System.Data.SQLite.xml
-G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\System.Data.SQLite.dll.config
 G:\www\C#\CPetMain\Tools\Tools.Notes\obj\Debug\Tools.Notes.csproj.CopyComplete

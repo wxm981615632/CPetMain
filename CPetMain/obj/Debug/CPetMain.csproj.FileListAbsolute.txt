@@ -32,8 +32,6 @@ G:\www\C#\CPetMain\CPetMain\bin\Debug\Tools.PicThumb.pdb
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Tools.ScreenCut.pdb
 G:\www\C#\CPetMain\CPetMain\bin\Debug\DSkin.xml
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Newtonsoft.Json.xml
-G:\www\C#\CPetMain\CPetMain\bin\Debug\System.Data.SQLite.xml
-G:\www\C#\CPetMain\CPetMain\bin\Debug\System.Data.SQLite.dll.config
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.csproj.CopyComplete
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.exe
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.pdb
