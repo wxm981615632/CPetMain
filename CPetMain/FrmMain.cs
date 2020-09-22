@@ -15,6 +15,9 @@ namespace CPetMain
 {
     public partial class FrmMain : DSkinForm
     {
+        Sports.Sport sp = new Sports.Sport();
+        Bitmap[] back_map;
+        int back_time = 400;
         public FrmMain()
         {
             InitializeComponent();
@@ -28,6 +31,20 @@ namespace CPetMain
                 IniHelper.Instance.ReadInteger("Setting", "location_x", Screen.GetWorkingArea(this).Width - this.Width - 100),
                 IniHelper.Instance.ReadInteger("Setting", "location_y", Screen.GetWorkingArea(this).Height - this.dSkinPictureBox1.Height)
             );
+            doSport(sp.getBmp(1));
+        }
+
+        private void doSport(Bitmap[] map,int time = 400,bool is_back=true)
+        {
+            if (is_back)
+            {
+                back_map = map;
+                back_time = time;
+            }
+            this.dSkinPictureBox1.Images = map;
+            this.dSkinPictureBox1.Interval = time;
+            this.dSkinPictureBox1.Play();
+            
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,6 +68,7 @@ namespace CPetMain
         private void 勿扰ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             baseModel = 3;
+            doSport(sp.getBmp(27));
             changeBaseModel();
         }
 
@@ -200,15 +218,33 @@ namespace CPetMain
                 oMoveToPoint = PointToScreen(new Point(e.X, e.Y));
                 oMoveToPoint.Offset(oPointClicked.X * -1, (oPointClicked.Y + SystemInformation.CaptionHeight + SystemInformation.BorderSize.Height) * -1 + 24);
                 Location = oMoveToPoint;
+                if (Location.X > last_x)
+                {
+                    doSport(sp.getDrop(1), 600,false);
+                }
+                else
+                {
+                    if (Location.X == last_x)
+                    {
+                        doSport(sp.getDrop(2), 600, false);
+                    }
+                    else
+                    {
+                        doSport(sp.getDrop(3), 600, false);
+                    }
+                }
+                last_x = Location.X;
             }
         }
         bool is_move = false;
+        int last_x = 0;
         Point oPointClicked; // 用于窗体移动
         private void dSkinPictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 is_move = false;
+                doSport(back_map, back_time,true);
                 IniHelper.Instance.FileName = "conf/config.ini";
                 IniHelper.Instance.WriteInteger("Setting", "location_x", this.Location.X);
                 IniHelper.Instance.WriteInteger("Setting", "location_y", this.Location.Y);
@@ -220,6 +256,7 @@ namespace CPetMain
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 is_move = true;
+                last_x = Location.X;
                 oPointClicked = new Point(e.X, e.Y);
             }
         }
