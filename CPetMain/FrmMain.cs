@@ -32,7 +32,7 @@ namespace CPetMain
                 IniHelper.Instance.ReadInteger("Setting", "location_x", Screen.GetWorkingArea(this).Width - this.Width - 100),
                 IniHelper.Instance.ReadInteger("Setting", "location_y", Screen.GetWorkingArea(this).Height - this.dSkinPictureBox1.Height)
             );
-            doSport(sp.getBmp(1));
+            doSport(sp.getBmp(7));
         }
 
         private void doSport(Bitmap[] map,int time = 100,bool is_back=true)
