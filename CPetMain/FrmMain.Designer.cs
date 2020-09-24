@@ -396,24 +396,24 @@
             // 运行状态ToolStripMenuItem
             // 
             this.运行状态ToolStripMenuItem.Name = "运行状态ToolStripMenuItem";
-            this.运行状态ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.运行状态ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.运行状态ToolStripMenuItem.Text = "运行状态";
             // 
             // 好感度ToolStripMenuItem
             // 
             this.好感度ToolStripMenuItem.Name = "好感度ToolStripMenuItem";
-            this.好感度ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.好感度ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.好感度ToolStripMenuItem.Text = "好感度";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // debugToolStripMenuItem
             // 
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // 设置ToolStripMenuItem
@@ -529,7 +529,6 @@
             this.DrawIcon = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMain";
