@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.ScreenCut", "Tools\To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Password", "Plugin\Plugin.Password\Plugin.Password.csproj", "{D0E0AB56-DA5D-4E1B-8334-AB804D0ACEC1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Water", "Water", "{122CF05C-27E9-4BDA-A3DC-E5B7E8FE397C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Water.Open2", "Water\Open2\Water.Open2.csproj", "{CA1ECC51-300A-4D6B-9A97-B5EB651611EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{D0E0AB56-DA5D-4E1B-8334-AB804D0ACEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0E0AB56-DA5D-4E1B-8334-AB804D0ACEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0E0AB56-DA5D-4E1B-8334-AB804D0ACEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1ECC51-300A-4D6B-9A97-B5EB651611EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1ECC51-300A-4D6B-9A97-B5EB651611EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1ECC51-300A-4D6B-9A97-B5EB651611EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1ECC51-300A-4D6B-9A97-B5EB651611EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +101,7 @@ Global
 		{E9E45E94-81B7-498E-B9A0-193B394B50A6} = {BC8A0BAC-679F-4387-B3D2-F97503231925}
 		{1AF1A936-24D5-4F9E-BB2C-AD903CFFA204} = {BC8A0BAC-679F-4387-B3D2-F97503231925}
 		{D0E0AB56-DA5D-4E1B-8334-AB804D0ACEC1} = {F92612F3-998A-44EB-AD85-27EDA69D604E}
+		{CA1ECC51-300A-4D6B-9A97-B5EB651611EC} = {122CF05C-27E9-4BDA-A3DC-E5B7E8FE397C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C343EE53-1F97-4188-976F-2470B30EE27A}

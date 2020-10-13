@@ -138,6 +138,10 @@
       <Project>{1af1a936-24d5-4f9e-bb2c-ad903cffa204}</Project>
       <Name>Tools.ScreenCut</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Water\Open2\Water.Open2.csproj">
+      <Project>{ca1ecc51-300a-4d6b-9a97-b5eb651611ec}</Project>
+      <Name>Water.Open2</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shime1.png" />

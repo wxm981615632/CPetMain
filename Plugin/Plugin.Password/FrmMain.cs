@@ -120,7 +120,7 @@ namespace Plugin.Password
                     p.id,
                     p.title,
                     p.username,
-                    p.password,
+                    //p.password,
                     p.url,
                     p.details
                 );

@@ -62,8 +62,7 @@
             this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.便签ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.摸鱼ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.游戏ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.工具ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.多开平台ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.状态ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.运行状态ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -238,59 +237,59 @@
             // 天气温度ToolStripMenuItem
             // 
             this.天气温度ToolStripMenuItem.Name = "天气温度ToolStripMenuItem";
-            this.天气温度ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.天气温度ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.天气温度ToolStripMenuItem.Text = "天气/温度";
             this.天气温度ToolStripMenuItem.Click += new System.EventHandler(this.天气温度ToolStripMenuItem_Click);
             // 
             // 快递提醒ToolStripMenuItem
             // 
             this.快递提醒ToolStripMenuItem.Name = "快递提醒ToolStripMenuItem";
-            this.快递提醒ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.快递提醒ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.快递提醒ToolStripMenuItem.Text = "快递提醒";
             this.快递提醒ToolStripMenuItem.Click += new System.EventHandler(this.快递提醒ToolStripMenuItem_Click);
             // 
             // 账单管理ToolStripMenuItem
             // 
             this.账单管理ToolStripMenuItem.Name = "账单管理ToolStripMenuItem";
-            this.账单管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.账单管理ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.账单管理ToolStripMenuItem.Text = "账单管理";
             // 
             // 周公解梦ToolStripMenuItem
             // 
             this.周公解梦ToolStripMenuItem.Name = "周公解梦ToolStripMenuItem";
-            this.周公解梦ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.周公解梦ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.周公解梦ToolStripMenuItem.Text = "周公解梦";
             // 
             // 文字识别ToolStripMenuItem
             // 
             this.文字识别ToolStripMenuItem.Name = "文字识别ToolStripMenuItem";
-            this.文字识别ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.文字识别ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.文字识别ToolStripMenuItem.Text = "文字识别";
             this.文字识别ToolStripMenuItem.Click += new System.EventHandler(this.文字识别ToolStripMenuItem_Click);
             // 
             // 密码管理ToolStripMenuItem
             // 
             this.密码管理ToolStripMenuItem.Name = "密码管理ToolStripMenuItem";
-            this.密码管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.密码管理ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.密码管理ToolStripMenuItem.Text = "密码管理";
             this.密码管理ToolStripMenuItem.Click += new System.EventHandler(this.密码管理ToolStripMenuItem_Click);
             // 
             // 每日备忘ToolStripMenuItem
             // 
             this.每日备忘ToolStripMenuItem.Name = "每日备忘ToolStripMenuItem";
-            this.每日备忘ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.每日备忘ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.每日备忘ToolStripMenuItem.Text = "每日备忘";
             // 
             // 万年历ToolStripMenuItem
             // 
             this.万年历ToolStripMenuItem.Name = "万年历ToolStripMenuItem";
-            this.万年历ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.万年历ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.万年历ToolStripMenuItem.Text = "万年历";
             // 
             // 音乐ToolStripMenuItem
             // 
             this.音乐ToolStripMenuItem.Name = "音乐ToolStripMenuItem";
-            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.音乐ToolStripMenuItem.Text = "音乐";
             // 
             // 工具ToolStripMenuItem
@@ -310,72 +309,66 @@
             // 定时关机重启ToolStripMenuItem
             // 
             this.定时关机重启ToolStripMenuItem.Name = "定时关机重启ToolStripMenuItem";
-            this.定时关机重启ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.定时关机重启ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.定时关机重启ToolStripMenuItem.Text = "定时关机/重启";
             this.定时关机重启ToolStripMenuItem.Click += new System.EventHandler(this.定时关机重启ToolStripMenuItem_Click);
             // 
             // json格式化ToolStripMenuItem
             // 
             this.json格式化ToolStripMenuItem.Name = "json格式化ToolStripMenuItem";
-            this.json格式化ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.json格式化ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.json格式化ToolStripMenuItem.Text = "Json格式化";
             this.json格式化ToolStripMenuItem.Click += new System.EventHandler(this.json格式化ToolStripMenuItem_Click);
             // 
             // 图片压缩ToolStripMenuItem
             // 
             this.图片压缩ToolStripMenuItem.Name = "图片压缩ToolStripMenuItem";
-            this.图片压缩ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.图片压缩ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.图片压缩ToolStripMenuItem.Text = "图片压缩";
             this.图片压缩ToolStripMenuItem.Click += new System.EventHandler(this.图片压缩ToolStripMenuItem_Click);
             // 
             // 屏幕截图ToolStripMenuItem
             // 
             this.屏幕截图ToolStripMenuItem.Name = "屏幕截图ToolStripMenuItem";
-            this.屏幕截图ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.屏幕截图ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.屏幕截图ToolStripMenuItem.Text = "屏幕截图";
             this.屏幕截图ToolStripMenuItem.Click += new System.EventHandler(this.屏幕截图ToolStripMenuItem_Click);
             // 
             // 网络修复ToolStripMenuItem
             // 
             this.网络修复ToolStripMenuItem.Name = "网络修复ToolStripMenuItem";
-            this.网络修复ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.网络修复ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.网络修复ToolStripMenuItem.Text = "网络修复";
             this.网络修复ToolStripMenuItem.Click += new System.EventHandler(this.网络修复ToolStripMenuItem_Click);
             // 
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.计算器ToolStripMenuItem.Text = "计算器";
             this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
             // 
             // 便签ToolStripMenuItem
             // 
             this.便签ToolStripMenuItem.Name = "便签ToolStripMenuItem";
-            this.便签ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.便签ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.便签ToolStripMenuItem.Text = "便签";
             this.便签ToolStripMenuItem.Click += new System.EventHandler(this.便签ToolStripMenuItem_Click);
             // 
             // 摸鱼ToolStripMenuItem
             // 
             this.摸鱼ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.游戏ToolStripMenuItem,
-            this.工具ToolStripMenuItem1});
+            this.多开平台ToolStripMenuItem});
             this.摸鱼ToolStripMenuItem.Name = "摸鱼ToolStripMenuItem";
             this.摸鱼ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.摸鱼ToolStripMenuItem.Text = "摸鱼";
             // 
-            // 游戏ToolStripMenuItem
+            // 多开平台ToolStripMenuItem
             // 
-            this.游戏ToolStripMenuItem.Name = "游戏ToolStripMenuItem";
-            this.游戏ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.游戏ToolStripMenuItem.Text = "游戏";
-            // 
-            // 工具ToolStripMenuItem1
-            // 
-            this.工具ToolStripMenuItem1.Name = "工具ToolStripMenuItem1";
-            this.工具ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
-            this.工具ToolStripMenuItem1.Text = "工具";
+            this.多开平台ToolStripMenuItem.Name = "多开平台ToolStripMenuItem";
+            this.多开平台ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.多开平台ToolStripMenuItem.Text = "多开平台";
+            this.多开平台ToolStripMenuItem.Click += new System.EventHandler(this.多开平台ToolStripMenuItem_Click);
             // 
             // 自定义ToolStripMenuItem
             // 
@@ -594,8 +587,7 @@
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 每日备忘ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 摸鱼ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 游戏ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 多开平台ToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Timer timer0;
         private DSkin.Controls.DSkinPictureBox dSkinPictureBox1;

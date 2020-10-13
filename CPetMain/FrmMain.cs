@@ -260,6 +260,12 @@ namespace CPetMain
             Plugin.Password.FrmMain frm = new Plugin.Password.FrmMain();
             frm.Show();
         }
+
+        private void 多开平台ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Water.Open2.FrmMain frm = new Water.Open2.FrmMain();
+            frm.Show();
+        }
         //timer0    清理/加速
         //timer1    清理缓存
         //timer2    写入好感度

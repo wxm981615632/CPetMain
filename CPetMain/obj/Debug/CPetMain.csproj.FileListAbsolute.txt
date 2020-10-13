@@ -38,3 +38,5 @@ G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.pdb
 G:\www\C#\CPetMain\CPetMain\bin\Debug\CPetMain.exe.config
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.dll
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.pdb
+G:\www\C#\CPetMain\CPetMain\bin\Debug\Water.Open2.dll
+G:\www\C#\CPetMain\CPetMain\bin\Debug\Water.Open2.pdb

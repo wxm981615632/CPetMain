@@ -33,7 +33,6 @@
             DSkin.Controls.DSkinGridListColumn dSkinGridListColumn3 = new DSkin.Controls.DSkinGridListColumn();
             DSkin.Controls.DSkinGridListColumn dSkinGridListColumn4 = new DSkin.Controls.DSkinGridListColumn();
             DSkin.Controls.DSkinGridListColumn dSkinGridListColumn5 = new DSkin.Controls.DSkinGridListColumn();
-            DSkin.Controls.DSkinGridListColumn dSkinGridListColumn6 = new DSkin.Controls.DSkinGridListColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.dSkinTreeView1 = new DSkin.Controls.DSkinTreeView();
             this.dSkinContextMenuStrip1 = new DSkin.Controls.DSkinContextMenuStrip();
@@ -156,22 +155,18 @@
             dSkinGridListColumn3.Name = "用户名";
             dSkinGridListColumn3.Visble = true;
             dSkinGridListColumn3.Width = 81;
-            dSkinGridListColumn4.Name = "密码";
+            dSkinGridListColumn4.Name = "链接";
             dSkinGridListColumn4.Visble = true;
             dSkinGridListColumn4.Width = 81;
-            dSkinGridListColumn5.Name = "链接";
+            dSkinGridListColumn5.Name = "备注";
             dSkinGridListColumn5.Visble = true;
-            dSkinGridListColumn5.Width = 81;
-            dSkinGridListColumn6.Name = "备注";
-            dSkinGridListColumn6.Visble = true;
-            dSkinGridListColumn6.Width = 84;
+            dSkinGridListColumn5.Width = 84;
             this.dSkinGridList1.Columns.AddRange(new DSkin.Controls.DSkinGridListColumn[] {
             dSkinGridListColumn1,
             dSkinGridListColumn2,
             dSkinGridListColumn3,
             dSkinGridListColumn4,
-            dSkinGridListColumn5,
-            dSkinGridListColumn6});
+            dSkinGridListColumn5});
             this.dSkinGridList1.ContextMenuStrip = this.dSkinContextMenuStrip2;
             this.dSkinGridList1.DoubleItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dSkinGridList1.EnabledOrder = false;
