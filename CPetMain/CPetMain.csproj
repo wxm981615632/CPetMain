@@ -35,11 +35,13 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DSkin">
-      <HintPath>D:\DSkin\【4.0】DSkin20200828223156\DSkin.dll</HintPath>
+    <Reference Include="DSkin, Version=16.6.3.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DSkin\【4.0】DSkin20201012154447\DSkin.dll</HintPath>
     </Reference>
-    <Reference Include="DSkin.Design">
-      <HintPath>D:\DSkin\【4.0】DSkin20200828223156\DSkin.Design.dll</HintPath>
+    <Reference Include="DSkin.Design, Version=16.6.3.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DSkin\【4.0】DSkin20201012154447\DSkin.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,6 +86,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +109,10 @@
     <ProjectReference Include="..\Plugin\Plugin.Ocr\Plugin.Ocr.csproj">
       <Project>{73155034-b720-4581-8147-01e35cd8f955}</Project>
       <Name>Plugin.Ocr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin\Plugin.Password\Plugin.Password.csproj">
+      <Project>{d0e0ab56-da5d-4e1b-8334-ab804d0acec1}</Project>
+      <Name>Plugin.Password</Name>
     </ProjectReference>
     <ProjectReference Include="..\Plugin\Plugin.Weather\Plugin.Weather.csproj">
       <Project>{e648032a-900b-4e45-96f8-b92a0c4feab0}</Project>

@@ -35,3 +35,6 @@ G:\www\C#\CPetMain\CPetMain\bin\Debug\Newtonsoft.Json.xml
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.csproj.CopyComplete
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.exe
 G:\www\C#\CPetMain\CPetMain\obj\Debug\CPetMain.pdb
+G:\www\C#\CPetMain\CPetMain\bin\Debug\CPetMain.exe.config
+G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.dll
+G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.pdb

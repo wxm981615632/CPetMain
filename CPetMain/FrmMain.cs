@@ -254,6 +254,12 @@ namespace CPetMain
         {
 
         }
+
+        private void 密码管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Plugin.Password.FrmMain frm = new Plugin.Password.FrmMain();
+            frm.Show();
+        }
         //timer0    清理/加速
         //timer1    清理缓存
         //timer2    写入好感度
