@@ -6,6 +6,7 @@ using System.Linq;
 using System.Management;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Common
 {
@@ -69,5 +70,6 @@ namespace Common
             }
             return cpuInfo;
         }
+        
     }
 }

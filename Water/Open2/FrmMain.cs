@@ -110,6 +110,16 @@ namespace Water.Open2
                     checkProcessAndClose(pro, "ikudesktop");
                 }
             }
+            //钉钉
+            if (name.Equals("钉钉") || name.Equals("DingTalk") || name.Equals("DingtalkLauncher")) 
+            {
+                Process[] localByName = Process.GetProcessesByName("DingTalk");
+                foreach (Process pro in localByName)
+                {
+                    checkProcessAndClose(pro, "DingTalk_loginframe");
+                    checkProcessAndClose(pro, "DingTalk");
+                }
+            }
             Process.Start(path);
             ClearMemory();
         }

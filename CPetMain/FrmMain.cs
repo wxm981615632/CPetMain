@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
@@ -32,7 +33,7 @@ namespace CPetMain
                 IniHelper.Instance.ReadInteger("Setting", "location_x", Screen.GetWorkingArea(this).Width - this.Width - 100),
                 IniHelper.Instance.ReadInteger("Setting", "location_y", Screen.GetWorkingArea(this).Height - this.dSkinPictureBox1.Height)
             );
-            
+            KeybordStatus();
         }
 
         private void doSport(Bitmap[] map,int time = 100,bool is_back=true)
@@ -274,5 +275,36 @@ namespace CPetMain
         //timer5    日历/节假日/节气提醒
         //timer6    游戏互动
         //timer7    快递提醒
+
+        /// <summary>
+        /// 获取键状态
+        /// </summary>
+        /// <param name="keyCode"></param>
+        /// <returns></returns>
+        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true, CallingConvention = CallingConvention.Winapi)]
+        public static extern short GetKeyState(int keyCode);
+        //键值
+        const int VK_NUMLOCK = 0x90;
+        const int VK_CAPITAL = 0x14;
+        const int VK_SCROLL = 0x91;
+        
+        private void KeybordStatus()
+        {
+            if (GetKeyState(VK_NUMLOCK)==0)
+            {
+                //小键盘未锁定
+                MessageBox.Show("小键盘已关闭");
+            }
+            if (GetKeyState(VK_CAPITAL) != 0)
+            {
+                //大小写未锁定
+                MessageBox.Show("大小写已锁定");
+            }
+            if (GetKeyState(VK_SCROLL) != 0)
+            {
+                //翻页键未锁定
+                MessageBox.Show("翻页键已锁定");
+            }
+        }
     }
 }
