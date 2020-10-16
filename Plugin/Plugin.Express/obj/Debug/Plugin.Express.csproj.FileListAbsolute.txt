@@ -30,8 +30,6 @@ G:\www\C#\CPetMain\Plugin\Plugin.Express\obj\Debug\Plugin.Express.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\Plugin.Express.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\Plugin.Express.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\Common.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\DSkin.Design.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\DSkin.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\Tools.ScreenCut.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Express\bin\Debug\Newtonsoft.Json.dll

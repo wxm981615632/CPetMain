@@ -14,6 +14,7 @@ namespace Water.Open2
 {
     public partial class FrmMain : Form
     {
+
         public FrmMain()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace Water.Open2
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void FrmMain_DragEnter(object sender, DragEventArgs e)
@@ -50,14 +51,12 @@ namespace Water.Open2
                 }
             }
         }
-        ProcessHandles m_proc_handles;
-        private void checkProcessAndClose(int proid,string name)
+        private void checkProcessAndClose(Process pro,string name)
         {
-            string str_handle = RefreshHandles(proid, name);
-            if (str_handle != "")
+            ushort handle = RefreshHandles2(pro, name);
+            if (handle != 0)
             {
-                UInt16 handle = Convert.ToUInt16(str_handle.Substring(2), 16);
-                m_proc_handles.CloseProcessHandle(proid, handle);
+                HandleModle.CloseProcessHandle(pro.Id, handle);
             }
         }
         private void openFile(string path = "")
@@ -71,7 +70,7 @@ namespace Water.Open2
                 foreach (Process pro in localByName)
                 {
                     //WeChat_App_Instance_Identity_Mutex_Name
-                    checkProcessAndClose(pro.Id,"WeChat_App_Instance_Identity_Mutex_Name");
+                    checkProcessAndClose(pro,"WeChat_App_Instance_Identity_Mutex_Name");
                 }
             }
             //企业微信
@@ -80,23 +79,52 @@ namespace Water.Open2
                 Process[] localByName = Process.GetProcessesByName("WXWork");
                 foreach (Process pro in localByName)
                 {
-                    checkProcessAndClose(pro.Id, "Tencent.WeWork.ExclusiveObjectInstance1");
-                    checkProcessAndClose(pro.Id, "Tencent.WeWork.ExclusiveObject");
+                    checkProcessAndClose(pro, "Tencent.WeWork.ExclusiveObjectInstance1");
+                    checkProcessAndClose(pro, "Tencent.WeWork.ExclusiveObject");
+                }
+            }
+            //腾讯手游助手
+            if (name.Equals("腾讯手游助手") || name.Equals("AppMarket"))
+            {
+                Process[] localByName = Process.GetProcessesByName("AppMarket");
+                foreach (Process pro in localByName)
+                {
+                    checkProcessAndClose(pro, "_APPMARKET_1");
+                }
+            }
+            //bilibili投稿工具
+            if (name.Equals("bilibili投稿工具") || name.Equals("ugc_assistant"))
+            {
+                Process[] localByName = Process.GetProcessesByName("ugc_assistant");
+                foreach (Process pro in localByName)
+                {
+                    checkProcessAndClose(pro, "qipc_sharedmemory_bilibilid");
+                }
+            }
+            //优酷
+            if (name.Equals("优酷") || name.Equals("YoukuDesktop"))
+            {
+                Process[] localByName = Process.GetProcessesByName("YoukuDesktop");
+                foreach (Process pro in localByName)
+                {
+                    checkProcessAndClose(pro, "ikudesktop");
                 }
             }
             Process.Start(path);
             ClearMemory();
         }
-
-        private string RefreshHandles(int pid,string check="")
+        private ushort RefreshHandles2(Process pro, string check = "")
         {
-            m_proc_handles = new ProcessHandles();
-            List<ProcessHandles.SYSTEM_HANDLE_INFORMATION> lst_handles = m_proc_handles.GetProcessHandles(pid);
-
-            foreach (ProcessHandles.SYSTEM_HANDLE_INFORMATION shi in lst_handles)
+            List<Win32API.SYSTEM_HANDLE_INFORMATION> lws = HandleModle.GetHandles(pro);
+            foreach (Win32API.SYSTEM_HANDLE_INFORMATION lw in lws)
             {
-                ProcessHandles.PROCESS_HANDLE_INFORMATION phi = m_proc_handles.GetProcessHandleInfo(shi.ProcessId, shi.Handle);
-                string str_handle_name = ProcessHandles.UnicodeStringToString(phi.m_object_name_info.Name);
+                string str_handle_name = HandleModle.GetFilePath(lw, pro);
+                Console.WriteLine(lw.ProcessID);
+                Console.WriteLine(lw.ObjectTypeNumber);
+                Console.WriteLine(lw.Flags);
+                Console.WriteLine(lw.Handle);
+                Console.WriteLine(str_handle_name);
+                Console.WriteLine("===========================");
                 if ("" == str_handle_name)
                 {
                     continue;
@@ -107,18 +135,11 @@ namespace Water.Open2
                 }
                 if (str_handle_name.Contains(check))
                 {
-                    Console.WriteLine(shi.ProcessId.ToString());
-                    Console.WriteLine("0x" + shi.Handle.ToString("X8"));
-                    Console.WriteLine(ProcessHandles.UnicodeStringToString(phi.m_object_type_info.Name));
-                    Console.WriteLine(str_handle_name);
-                    Console.WriteLine("================================");
-                    return "0x" + shi.Handle.ToString("X8");
+                    return lw.Handle;
                 }
-               
             }
-            return "";
+            return 0;
         }
-
         #region 内存回收
         [DllImport("kernel32.dll", EntryPoint = "SetProcessWorkingSetSize")]
         public static extern int SetProcessWorkingSetSize(IntPtr process, int minSize, int maxSize);
@@ -136,6 +157,26 @@ namespace Water.Open2
         }
         #endregion
 
+        private void 选择文件ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Multiselect = true;
+            fileDialog.Title = "请选择文件";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = fileDialog.FileName;//返回文件的完整路径   
+                string[] img = { ".lnk", ".exe", ".doc", ".docx", ".rar" };
+                if (File.Exists(path))
+                {
+                    //string filename = System.IO.Path.GetFileName(path);
+                    string ext = System.IO.Path.GetExtension(path);
+                    if (Array.IndexOf(img, ext) != -1)
+                    {
+                        openFile(path);
+                    }
+                }
+            }
+        }
     }
 
 

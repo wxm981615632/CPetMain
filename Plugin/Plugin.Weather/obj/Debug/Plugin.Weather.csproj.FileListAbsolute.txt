@@ -30,8 +30,6 @@ G:\www\C#\CPetMain\Plugin\Plugin.Weather\obj\Debug\Plugin.Weather.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\Plugin.Weather.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\Plugin.Weather.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\Common.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\DSkin.Design.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\DSkin.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\Newtonsoft.Json.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\Tools.ScreenCut.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Weather\bin\Debug\System.Data.SQLite.dll

@@ -40,8 +40,6 @@ G:\www\C#\CPetMain\Tools\Tools.FormatJson\obj\Debug\Tools.FormatJson.pdb
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Tools.FormatJson.dll
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Tools.FormatJson.pdb
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Common.dll
-G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\DSkin.Design.dll
-G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\DSkin.dll
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Newtonsoft.Json.dll
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Tools\Tools.FormatJson\bin\Debug\Common.pdb

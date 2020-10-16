@@ -56,8 +56,6 @@ G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Plugin.Ocr.dll.config
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Plugin.Ocr.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Plugin.Ocr.pdb
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Common.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\DSkin.Design.dll
-G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\DSkin.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Newtonsoft.Json.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\Tools.FormatJson.dll
 G:\www\C#\CPetMain\Plugin\Plugin.Ocr\bin\Debug\System.Data.SQLite.dll

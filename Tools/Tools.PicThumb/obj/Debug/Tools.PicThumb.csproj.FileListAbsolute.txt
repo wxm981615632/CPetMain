@@ -43,6 +43,5 @@ G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\Common.dll
 G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\Newtonsoft.Json.dll
 G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\Common.pdb
-G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\DSkin.xml
 G:\www\C#\CPetMain\Tools\Tools.PicThumb\bin\Debug\Newtonsoft.Json.xml
 G:\www\C#\CPetMain\Tools\Tools.PicThumb\obj\Debug\Tools.PicThumb.csproj.CopyComplete

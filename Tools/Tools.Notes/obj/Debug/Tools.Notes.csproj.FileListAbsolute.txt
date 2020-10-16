@@ -43,8 +43,6 @@ G:\www\C#\CPetMain\Tools\Tools.Notes\obj\Debug\Tools.Notes.pdb
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Tools.Notes.dll
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Tools.Notes.pdb
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Common.dll
-G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\DSkin.Design.dll
-G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\DSkin.dll
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Newtonsoft.Json.dll
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\System.Data.SQLite.dll
 G:\www\C#\CPetMain\Tools\Tools.Notes\bin\Debug\Common.pdb
