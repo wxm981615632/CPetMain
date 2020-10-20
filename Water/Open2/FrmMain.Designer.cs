@@ -32,15 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.选择文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.支持列表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.选择文件ToolStripMenuItem});
+            this.选择文件ToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.支持列表ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 76);
             // 
             // 选择文件ToolStripMenuItem
             // 
@@ -48,6 +52,18 @@
             this.选择文件ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.选择文件ToolStripMenuItem.Text = "选择文件";
             this.选择文件ToolStripMenuItem.Click += new System.EventHandler(this.选择文件ToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // 支持列表ToolStripMenuItem
+            // 
+            this.支持列表ToolStripMenuItem.Name = "支持列表ToolStripMenuItem";
+            this.支持列表ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.支持列表ToolStripMenuItem.Text = "支持列表";
+            this.支持列表ToolStripMenuItem.Click += new System.EventHandler(this.支持列表ToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -73,5 +89,7 @@
 
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 选择文件ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 支持列表ToolStripMenuItem;
     }
 }

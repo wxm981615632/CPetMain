@@ -40,3 +40,4 @@ G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.dll
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Plugin.Password.pdb
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Water.Open2.pdb
 G:\www\C#\CPetMain\CPetMain\bin\Debug\Water.Open2.dll
+G:\www\C#\CPetMain\CPetMain\bin\Debug\Water.Open2.exe

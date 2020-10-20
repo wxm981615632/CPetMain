@@ -4,5 +4,8 @@ G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.FrmMain.resources
 G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.csproj.GenerateResource.cache
 G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.csproj.CoreCompileInputs.cache
 G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.pdb
-G:\www\C#\CPetMain\Water\Open2\bin\Debug\Water.Open2.dll
-G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.dll
+G:\www\C#\CPetMain\Water\Open2\bin\Debug\Water.Open2.exe
+G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.exe
+G:\www\C#\CPetMain\Water\Open2\obj\Debug\Interop.IWshRuntimeLibrary.dll
+G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.csproj.ResolveComReference.cache
+G:\www\C#\CPetMain\Water\Open2\obj\Debug\Water.Open2.FrmSoft.resources
