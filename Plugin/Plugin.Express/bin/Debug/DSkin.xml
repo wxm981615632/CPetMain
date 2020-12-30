@@ -758,6 +758,26 @@
             <param name="item"></param>
             <returns></returns>
         </member>
+        <member name="F:DSkin.Common.JsonHelper.TimestampStart">
+            <summary>
+            时间戳起始日期
+            </summary>
+        </member>
+        <member name="M:DSkin.Common.JsonHelper.ToTimestamp(System.DateTime,System.Boolean)">
+            <summary>
+            转换为时间戳
+            </summary>
+            <param name="dateTime"></param>
+            <param name="milliseconds">是否使用毫秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:DSkin.Common.JsonHelper.ToDateTime(System.Int64)">
+            <summary>
+            时间戳转DateTime
+            </summary>
+            <param name="milliseconds"></param>
+            <returns></returns>
+        </member>
         <member name="T:DSkin.Common.ImeContext">
             <devdoc>
                 Represents the native IME context.
@@ -1752,6 +1772,41 @@
             <param name="Index">【输入】指定加密狗的序号</param>
             <param name="pTime">【返回】当前日期、时间，6个字节内容分别是年月日时分秒</param>
             <returns> 0：表示系统中存在ViKey加密狗 非0：表示系统中没有找到ViKey加密狗</returns>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDateTimePicker.ToolStripDropDown">
+            <summary>
+            下拉框
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDateTimePicker.ControlHost">
+            <summary>
+            控件托管
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDateTimePicker.Format">
+            <summary>
+            时间格式
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDateTimePicker.OnlyDate">
+            <summary>
+            下拉选择只显示日期部分
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDateTimePicker.SelectBackColor">
+            <summary>
+            选中的背景色
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDragEventArgs.Handled">
+            <summary>
+            事件是否被处理
+            </summary>
+        </member>
+        <member name="P:DSkin.DirectUI.DuiDragEventArgs.OriginalSource">
+            <summary>
+            事件触发源控件
+            </summary>
         </member>
         <member name="P:DSkin.DirectUI.DuiTreeView.InnerListBox">
             <summary>
@@ -3146,6 +3201,12 @@
             初始化 MB，需要已经添加到托管的实体控件上了，才能调用
             </summary>
         </member>
+        <member name="M:DSkin.DirectUI.DuiMiniBlink.NoHTML(System.String)">
+              <summary>
+              去除HTML标记
+              </summary>
+              <returns>已经去除后的文字</returns>
+        </member>
         <member name="P:DSkin.DirectUI.DuiMiniBlink.CanGoBack">
             <summary>
             是否可以返回
@@ -4167,6 +4228,179 @@
             </summary>
             <param name="prop"></param>
             <param name="v"></param>
+        </member>
+        <member name="F:DSkin.DirectUI.wkePoint.x">
+            int
+        </member>
+        <member name="F:DSkin.DirectUI.wkePoint.y">
+            int
+        </member>
+        <member name="F:DSkin.DirectUI.wkeMemBuf.size">
+            int
+        </member>
+        <member name="F:DSkin.DirectUI.wkeMemBuf.data">
+            void*
+        </member>
+        <member name="F:DSkin.DirectUI.wkeMemBuf.length">
+            size_t->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.StorageType">
+            _wkeWebDragData_Item_wkeStorageType
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.stringType">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.stringData">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.filenameData">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.displayNameData">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.binaryData">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.title">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.fileSystemURL">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.fileSystemFileSize">
+            __int64
+        </member>
+        <member name="F:DSkin.DirectUI._wkeWebDragData_Item.baseURL">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragData.Struct1">
+            _wkeWebDragData_Item
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragData.m_itemList">
+            Item*
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragData.m_itemListLength">
+            int
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragData.m_modifierKeyState">
+            int
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragData.m_filesystemId">
+            wkeMemBuf*
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationNone">
+            wkeWebDragOperationNone -> 0
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationCopy">
+            wkeWebDragOperationCopy -> 1
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationLink">
+            wkeWebDragOperationLink -> 2
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationGeneric">
+            wkeWebDragOperationGeneric -> 4
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationPrivate">
+            wkeWebDragOperationPrivate -> 8
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationMove">
+            wkeWebDragOperationMove -> 16
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationDelete">
+            wkeWebDragOperationDelete -> 32
+        </member>
+        <member name="F:DSkin.DirectUI.wkeWebDragOperationsMask.wkeWebDragOperationEvery">
+            wkeWebDragOperationEvery -> 0xffffffff
+        </member>
+        <member name="T:DSkin.DirectUI.wkeStartDraggingCallback">
+             Return Type: void
+            webView: wkeWebView->_tagWkeWebView*
+            param: void*
+            frame: wkeWebFrameHandle->void*
+            data: wkeWebDragData*
+            mask: wkeWebDragOperationsMask->wkeWebDragOperation->_wkeWebDragOperation
+            image: void*
+            dragImageOffset: wkePoint*
+        </member>
+        <member name="F:DSkin.DirectUI.wkeDraggableRegion.bounds">
+            RECT->tagRECT
+        </member>
+        <member name="F:DSkin.DirectUI.wkeDraggableRegion.draggable">
+            boolean
+        </member>
+        <member name="T:DSkin.DirectUI.wkeDraggableRegionsChangedCallback">
+             Return Type: void
+            webView: wkeWebView->_tagWkeWebView*
+            param: void*
+            rects: wkeDraggableRegion*
+            rectCount: int
+        </member>
+        <member name="F:DSkin.DirectUI.tagRECT.left">
+            LONG->int
+        </member>
+        <member name="F:DSkin.DirectUI.tagRECT.top">
+            LONG->int
+        </member>
+        <member name="F:DSkin.DirectUI.tagRECT.right">
+            LONG->int
+        </member>
+        <member name="F:DSkin.DirectUI.tagRECT.bottom">
+            LONG->int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.cb">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.lpReserved">
+            LPWSTR->WCHAR*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.lpDesktop">
+            LPWSTR->WCHAR*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.lpTitle">
+            LPWSTR->WCHAR*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwX">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwY">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwXSize">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwYSize">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwXCountChars">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwYCountChars">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwFillAttribute">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.dwFlags">
+            DWORD->unsigned int
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.wShowWindow">
+            WORD->unsigned short
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.cbReserved2">
+            WORD->unsigned short
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.lpReserved2">
+            LPBYTE->BYTE*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.hStdInput">
+            HANDLE->void*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.hStdOutput">
+            HANDLE->void*
+        </member>
+        <member name="F:DSkin.DirectUI.STARTUPINFOW.hStdError">
+            HANDLE->void*
         </member>
         <member name="T:DSkin.DirectUI.TaskResult">
             <summary>
@@ -15986,6 +16220,11 @@
         <member name="P:DSkin.Controls.DSkinPictureBox.Images">
             <summary>
             图片集
+            </summary>
+        </member>
+        <member name="P:DSkin.Controls.DSkinPictureBox.AutoPlay">
+            <summary>
+            是否自动播放
             </summary>
         </member>
         <member name="M:DSkin.Controls.DSkinPictureBox.Play">

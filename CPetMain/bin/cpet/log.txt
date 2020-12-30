@@ -1,0 +1,10 @@
+[15:06:04.977]   [CLIENT] Exe module file: C:\Program Files (x86)\梦幻西游手游\My\mymain-mut.exe
+[15:06:04.977]   [CLIENT] Current directory: G:\www\C#\CPetMain\CPetMain\bin\Debug
+[15:06:04.977]   [CLIENT] Initializing client....
+[15:06:04.977]   [CLIENT] Init utils.dll (4103903635)
+
+
+ERROR *****************************************************************************
+
+[15:06:04.978]   [UTILS] [ERROR] neox_g18.xml not exist2!
+[15:06:04.978]   [UTILS] Succeeded to create or open log.txt to write

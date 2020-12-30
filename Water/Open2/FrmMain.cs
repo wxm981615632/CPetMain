@@ -25,7 +25,7 @@ namespace Water.Open2
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FrmMain_DragEnter(object sender, DragEventArgs e)
@@ -72,6 +72,9 @@ namespace Water.Open2
         private void openFile(string path = "")
         {
             ClearMemory();
+            string args = "";
+            string dir = System.IO.Path.GetDirectoryName(path);//路径
+            string ext = System.IO.Path.GetExtension(path);//后缀
             string name = System.IO.Path.GetFileNameWithoutExtension(path);
             Dictionary<string, string> dic = new Dictionary<string, string>();
             dic.Add("name", name);
@@ -81,6 +84,7 @@ namespace Water.Open2
             {
                 foreach(Map_Info mi in res.data)
                 {
+                    //互斥体
                     if (mi.type == 1)
                     {
                         Process[] localByName = Process.GetProcessesByName(mi.process);
@@ -92,9 +96,31 @@ namespace Water.Open2
                             }
                         }
                     }
+                    //起始名称
+                    if (mi.type == 2)
+                    {
+                        
+                        if(!System.IO.File.Exists(dir + "\\" + mi.paths + "-mut" + ext))
+                        {
+                            System.IO.File.Copy(dir + "\\" + mi.paths + ext, dir + "\\" + mi.paths + "-mut" + ext);
+                        }
+                        args = mi.paths_args;
+                        Process[] localByName = Process.GetProcessesByName(mi.process+ "-mut");
+                        foreach (Process pro in localByName)
+                        {
+                            foreach (string value in mi.values)
+                            {
+                                checkProcessAndClose(pro, value);
+                            }
+                        }
+                        path = dir + "\\" + mi.paths + "-mut" + ext;
+                    }
                 }
-            }            
-            Process.Start(path);
+            }
+            Process myprocess = new Process();
+            myprocess.StartInfo = new ProcessStartInfo(path, args);
+            myprocess.StartInfo.WorkingDirectory = dir;
+            myprocess.Start();
             ClearMemory();
         }
 

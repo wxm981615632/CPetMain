@@ -32,6 +32,8 @@ namespace Water.Open2
         public string name { set; get; }
         public string process { set; get; }
         public int type { set; get; }
+        public string paths { set; get; }
+        public string paths_args { set; get; }
         public string[] values { set; get; }
 
     }
